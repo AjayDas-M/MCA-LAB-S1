@@ -1,0 +1,6 @@
+a = input('enter the numbers : ')
+a= list(map(int,a.split(' ')))
+b = min(a)
+print("Minimum element is : ",b)
+c = max(a)
+print("Maximum element is : ",c)

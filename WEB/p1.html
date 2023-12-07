@@ -1,0 +1,141 @@
+<html>
+<head>
+	<title> FORM </title>
+	<script>
+		function save()
+		{
+			var name = document.form1.name.value;
+			var course = document.form1.course.value;
+			var gender = document.form1.gender.value;
+			var dob = document.form1.dob.value;
+			var address = document.form1.address.value;
+			var phone = document.form1.phone.value;
+			var gaurdian = document.form1.gaurdian.value;
+			var hobbies = document.form1.hobbies.value;
+			var extra = document.form1.extra.value;
+			
+			if(name==null || name=="")
+			{
+				alert("Name cannot be empty");
+			}
+			if(course==null || course=="")
+			{
+				alert("please select a course");
+			}
+			if(gender==null || gender=="")
+			{
+				alert("please select a gender");
+			}
+			if(dob=E :=null || dob=="")
+			{
+				alert("please enter date of birth");
+			}
+			if(address==null || address=="")
+			{
+				alert("please enter the address");
+			}
+			if(phone==null || phone=="")
+			{
+				alert("please enter the phone number");
+			}
+			if(gaurdian==null || gaurdian=="")
+			{
+				alert("please enter gaurdian name");
+			}
+			if(hobbies==null || hobbies=="")
+			{
+				alert("please enter your hobbies");
+			}
+			if(extra==null || extra=="")
+			{
+				alert("please enter the address");
+			}
+		}
+			
+	</script>
+	
+</head>
+
+<body>
+<center>
+<h1> STUDENT REGISTRATION FORM </h1>
+	<form name="form1">
+	
+	<table cellpadding="5">
+	
+	<tr>
+	 <td> NAME : </td>
+	 <td> <input type="text" id="name" placeholder="Enter your name"> </td>
+	</tr> 
+	
+	<tr>
+	 <td> COURSE : </td>
+	 <td> 
+	 	<select id="course"> 
+	 		<option>BCA</option>
+	 		<option>B.sc Computer science</option>
+	 		<option>B.tec</option>
+	 	</select>
+	 </td>
+	</tr> 
+	
+	<tr>
+	 <td> Gender : </td>
+	 <td> 
+	 	<input type="radio" name="gender"> &nbsp; Male &nbsp;
+	 	<input type="radio" name="gender"> &nbsp; Female &nbsp;
+	 	<input type="radio" name="gender"> &nbsp; others &nbsp;
+	 
+	 </td>
+	</tr> 
+	
+	<tr>
+	 <td> DATE OF BIRTH : </td>
+	 <td> <input type="date" id="input1"> </td>
+	</tr> 
+	
+	<tr>
+	 <td> ADDRESS : </td>
+	 <td> <textarea id="address"></textarea> </td>
+	</tr> 
+	
+	<tr>
+	 <td> PHONE NO : </td>
+	 <td> <input type="text" id="phone"> </td>
+	</tr> 
+	
+	<tr>
+	 <td> GAURDIAN : </td>
+	 <td> <input type="text" id="gaurdian" placeholder="Enter your Gaurdians name"> </td>
+	</tr> 
+	
+	<tr>
+	 <td> HOBBIES : </td>
+	 <td> <input type="text" id="hobbies"> </td>
+	</tr> 
+	
+	<tr>
+	 <td> EXTRA CARRICULAR ACTIVITIES : </td>
+	 <td> 
+	 	<input type="checkbox" name="extra">&nbsp;Dance &nbsp; 
+	 	<input type="checkbox" name="extra">&nbsp;Sing &nbsp;
+	 	<input type="checkbox" name="extra">&nbsp;Drawing &nbsp;
+	 	<input type="checkbox" name="extra">&nbsp;Cricket &nbsp;
+	 	<input type="checkbox" name="extra">&nbsp;Football &nbsp;
+	 	<input type="checkbox" name="extra">&nbsp;Others &nbsp;
+	 </td>
+	</tr> 
+	
+	<tr>
+	 <td> <input type="submit" value="save" onClick="save()"> </td>
+	 <td> <input type="reset" value="clear"></td>
+	</tr>
+	
+	</table>
+	</form>
+</center>
+</body>
+
+
+
+</html>
