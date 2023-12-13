@@ -40,13 +40,14 @@
             echo "DataBase Connected Successfully";
         }
 
-        if(isset($_post['btn']))
+        if(isset($_POST['btn']))
         {
-            $name = $_post['si'];
-            $qty = $_post['qty'];
-            $unit = $_post['unit'];
-            $manu = $_post['manu'];
-            $exp = $_post['exp'];
+            echo "uyftfyf";
+            $name = $_POST['si'];
+            $qty = $_POST['qty'];
+            $unit = $_POST['unit'];
+            $manu = $_POST['manu'];
+            $exp = $_POST['exp'];
             $qry = "insert into product (name,quantity,unit_price,manu_date,exp_date) values('$name','$qty','$unit','$manu','$exp') ";
             if(mysqli_query($connect,$qry)) 
             {
@@ -80,9 +81,13 @@
                 echo "<td>".$product['name']."</td>";
                 echo "<td>".$product['quantity']."</td>";
                 echo "<td>".$product['unit_price']."</td>";
-                echo "<td>".$product['manu_date']."</td>";
-                echo "<td>".$product['exp_date']."</td>";
-                echo "</tr";
+               
+                $manuDate = date('d-m-Y', strtotime($product['manu_date']));
+                $expDate = date('d-m-Y', strtotime($product['exp_date']));
+            
+                echo "<td>" . $manuDate . "</td>";
+                echo "<td>" . $expDate . "</td>";
+                echo "</tr>";
             }
         ?>
 
